@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sair</title>
+    <!--ICON NA GUIA-->
+    <link rel="icon" href="imagensTelaInicial/logo.png">
+    <link rel="stylesheet" href="css/telaPerfil.css">
+</head>
+<style>
+    body{
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        margin: 0;
+    }
+
+    main{
+        left: 0;
+        top: 0;
+        margin: 0;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin-top: -80px;
+        background-color: #fff;
+    }
+
+    main h4 {
+        font-size: 35px;
+        text-align: center;
+        width: 100%;
+        color: #093F61;
+        font-weight: bolder;
+    }
+
+    form {
+        margin: 0;
+        width: fit-content;
+        height: fit-content;
+    }
+
+    .botoes {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .botoes button{
+        font-size: 25px;
+        width: 140px;
+        height: 50px;
+        border-radius: 10px;
+        border: none;
+        color: #fff;
+        background-color: #093F61;
+    }
+
+    .botaoCancel{
+        margin-left: 10px;
+    }
+
+</style>
+<body>
+    <main>
+        <h4>Deseja realmente sair?</h4>
+        <div class="botoes">
+            <form action="sair.php" method="post">
+                <button>Sair</button>
+            </form>
+            <button class="botaoCancel" onclick="cancel()">Cancelar</button>
+        </div>
+    </main>
+</body>
+</html>
+<script>
+    
+    function cancel() {
+        window.location.href = 'telaPerfil.php'
+    }
+</script>

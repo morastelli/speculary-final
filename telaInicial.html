@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Speculary</title>
+    <!--ICON NA GUIA-->
+    <link rel="icon" href="imagensTelaInicial/logo.png">
+    <!--LINK BOOTSTRAP-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/telaInicial.css">
+    <!--FEITO PARA S8+-->
+</head>
+<body>
+    <!--NAVBAR DE CIMA-->
+    <nav>
+        <img src="imagensTelaInicial/logoetexto.png" class="logo" loading="lazy">
+        <h5>Bem-vindo!</h5>
+        <div class="direita">
+            <a href="carrinho.php"><img src="imagensTelaInicial/carrinho.png" class="carrinho" loading="lazy"></a>
+        </div>
+    </nav>
+    
+    <!--IMAGEM PRINCIPAL-->
+     <img src="imagensTelaInicial/1.jpg" class="imagem_principal" loading="lazy">
+          
+    <!--BANNER-->
+    <img src="imagensTelaInicial/banner.jpg" class="banner" loading="lazy">
+
+    <!--MAIS VENDIDOS-->
+    <div class="maisVendidos">
+        <h2>Mais vendidos</h2>
+        <div class="maisVendidosProdutos">
+            <a href="paginadeprodutosdesol2.php"><div class="card"><img src="images/oculosdesolhoje.jpg" loading="lazy"></div></a>
+            <a href="paginadeprodutosdelente1.php"><div class="card"><img src="images/lente.jpeg" loading="lazy"></div></a>
+            <a href="paginadeprodutosdesol6.php"><div class="card"><img src="images/img4.jpg" loading="lazy"></div></a>
+            <a href="paginadeprodutosdegrau2.php"><div class="card"><img src="images/oculosdegrauhoje.jpg" loading="lazy"></div></a>
+        </div>
+    </div>
+
+    <!--LANÇAMENTOS-->
+    <div class="lancamentos">
+        <h2>Lançamentos</h2>
+        <div class="lancamentosProdutos">
+            <a href="paginadeprodutosdesol4.php"><div class="card"><img src="images/oculosdesolhoje3.jpg" loading="lazy"></div></a>
+            <a href="paginadeprodutosarmacao3.php"><div class="card"><img src="images/armacaohoje22.jpg" loading="lazy"></div></a>
+            <a href="paginadeprodutosdesol1.php"><div class="card"><img src="images/oculos1.jpg" loading="lazy"></div></a>
+            <a href="paginadeprodutosdelente6.php"><div class="card"><img src="images/img3.jpg" loading="lazy"></div></a>
+        </div>
+    </div>
+
+    <!--NAVBAR DE BAIXO-->
+    <footer>
+        <div class="navegacao">
+            <ul>
+                <!--TELA INICIAL-->
+                <li class="list active"> <!--LIST ACTIVE DEFINE ONDE A BOLINHA DO NAV COMEÇA-->
+                    <a href="#">
+                        <span class="icon">
+                            <ion-icon name="home-outline"></ion-icon>
+                        </span>
+                        <span class="text">Início</span>
+                    </a>
+                </li>
+                <!--CATEGORIAS-->
+                <li class="list">
+                    <a href="categorias.html">
+                        <span class="icon">
+                            <ion-icon name="grid-outline"></ion-icon>
+                        </span>
+                        <span class="text">Categorias</span>
+                    </a>
+                </li>
+                <!--FAVORITOS-->
+                <li class="list">
+                    <a href="favoritos.php">
+                        <span class="icon">
+                            <ion-icon name="bookmark-outline"></ion-icon>
+                        </span>
+                        <span class="text">Favoritos</span>
+                    </a>
+                </li>
+                <!--PERFIL-->
+                <li class="list">
+                    <a href="telaPerfil.php">
+                        <span class="icon">
+                            <ion-icon name="person-outline"></ion-icon>
+                        </span>
+                        <span class="text">Perfil</span>
+                    </a>
+                </li>
+                <div class="indicator"></div>
+            </ul>
+        </div>
+    </footer>
+
+    <!--IMPORT DO SCRIPT DA ANIMAÇÃO NAVBAR DE BAIXO-->
+    <script src="scriptNav.js"></script>
+    <!--IMPORT DOS ÍCONES-->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

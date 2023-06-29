@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+    font-family: 'Poppins', sans-serif;
+    cursor: default;
+    margin: 0;
+    padding: 0;
+}
+/*CONFIGURAÇÃO PARA OS LINK*/
+a {
+    text-decoration: none;
+    color: black;
+}
+body
+{
+    justify-content: space-around;
+    align-items: center;
+    display: flex;
+    background-color: white;
+    flex-direction: column;
+    overflow: hidden;
+    position: fixed;
+    height: 740px;
+    width: 360px;
+}   
+
+/*NAVBAR DE CIMA*/
+nav {
+    border: solid #333 1px;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-items: center;
+    justify-content: space-between;
+    width: 100%;
+    background-color: #fff;
+}
+.esquerda
+{
+    width: 33%;
+    height: 60px;
+}
+.logo
+{
+    width: 60px;
+    height: 60px;
+}
+.direita
+{
+    width: 33%;
+    height: 60px;
+    align-items: center;
+    align-content: center;
+    justify-content: right;
+    display: flex;
+}
+.centro
+{
+    width: 33%;
+    height: 60px;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    justify-items: center;
+    display: flex;
+    font-size: 15px;
+}
+.carrinho
+{
+    margin-top: 10px;
+    margin-right: 10px;
+    width: 40px;
+    height: 40px;
+}
+.tudo
+{
+        width: 100%;
+        height: 700px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        justify-items: center;
+        align-items: center;
+        align-content: center;
+}
+.principal
+{
+    margin-top: 40px;
+    width: 100%;
+    height: 650px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+}
+.divisao
+{
+    width: 150px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+}
+.produtos
+{
+    width: 130px;
+    height: 130px;
+    background-color: #093F61;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.seta{
+    margin-top: 5px;
+    width: 45px;
+    height: 45px;
+    position: absolute;
+    right: 305px;
+
+}
+.imagens
+{
+    width: 126px;
+    height: 126px;
+}
+
+.divisao p{
+    font-size: 15px;
+    text-align: center;
+    margin: 8px;
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Cadastro</title>
+     <!--ICON NA GUIA-->
+     <link rel="icon" href="imagensTelaInicial/logo.png">
+    <link rel="stylesheet" href="css/EstiloCadastro.css">
+</head>
+<body>
+    <div class="tela-login">
+    <div class="left-login">
+        <div class="setaDiv">
+            <a href="login.html">
+            <img src="imagensCadastro/setaespeculary.jpg" class="seta">
+            </a>
+    <img src="imagensCadastro/mulheranimacao2.svg" class="mulheroculos2" alt="mulheranimacao2">
+    </div>
+    </div>
+    <div class="right-login">
+    <div class="card-login">
+        <h1>CADASTRE-SE</h1>
+        <form action="inserir.php" method="post">
+            <!--CAMPO NOME-->
+            <div class="textfield">
+                <label for="usuario">Nome</label>
+                <input type="text" name="nome" placeholder="digite o seu nome">
+            </div>
+            <!--CAMPO E-MAIL-->
+            <div class="textfield">
+                <label for="email">E-mail</label>
+                <input type="email" name="email" placeholder="digite o seu e-mail">
+            </div>
+            <!--CAMPO SENHA-->
+            <div class="textfieldSenha">
+                <label for="senha">Senha</label>
+                <div class="senhaOlho">
+                    <input type="password" name="senha" placeholder="digite uma senha" id="senha">
+                    <img style="width: 25px; height: 25px; margin-left: 2px; margin-bottom: -8px;" onclick="mudarOlho()" src="imagensCadastro/olhoFechado.png" id="olho">
+                </div>
+            </div>
+            <a href="login.html">Já tem uma conta?</a><!--Caso o usuario tenha uma conta, ao clicar no botão vai à tela de login-->
+            <button class="btn-login">Cadastrar-se</button>
+        </form>
+    </div>
+</div>
+</div>
+</body>
+<script src="mudarOlho.js"></script>
+</html>

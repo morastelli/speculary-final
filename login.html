@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Login</title>
+     <!--ICON NA GUIA-->
+     <link rel="icon" href="imagensTelaInicial/logo.png">
+    <link rel="stylesheet" href="css/estiloQuemsomos.css">
+    <link rel="stylesheet" type="text/css" href="css/estiloLogin.css">
+</head>
+<body>
+    <div class="tela-login">
+    <div class="left-login">
+        <div class="setaDiv">
+            <a href="telaPerfil.php"><img src="imagensLogin/setaespeculary.jpg" class="seta"></a><!--Redireciona para tela de perfil-->
+            <img src="imagensLogin/mulheranimacao.svg" class="mulheroculos">
+    </div>
+       </div>
+    <div class="right-login">
+    <div class="card-login">
+        <h1>LOGIN</h1>
+        <form action="verifica.php" method="post">
+            <!--Campo nome-->
+            <div class="textfield">
+                <label for="usuario">Nome</label>
+                <input type="text" name="nome" placeholder="digite o seu nome">
+            </div>
+            <!--Campo senha-->
+            <div class="textfieldSenha">
+                <label for="senha">Senha</label>
+                <div class="senhaOlho">
+                    <input type="password" name="senha" placeholder="digite uma senha" id="senha">
+                    <img style="width: 25px; height: 25px; margin-left: 2px; margin-bottom: -8px;" onclick="mudarOlho()" src="imagensCadastro/olhoFechado.png" id="olho">
+                </div>
+            </div>
+            <!--Caso o usuario não estiver logado, ao clicar no botão ir à tela para cadastrar-se-->
+            <a href="cadastro.html">Não possui uma conta?</a>
+            <button type="submit" class="btn-login">Entrar</button>
+        </form>
+    </div>
+</div>
+</div>
+</body>
+<script src="mudarOlho.js"></script>
+</html>

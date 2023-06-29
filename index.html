@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animação</title>
+     <!--ICON NA GUIA-->
+     <link rel="icon" href="imagensTelaInicial/logo.png">
+    <link rel="stylesheet" href="css/estiloQuemsomos.css">
+    <!--FEITO PARA S8+-->
+    <style>
+        html {
+            height: 100%;
+            width: 100%;
+        }
+
+        body {
+            background-color: #093F61;
+            animation: changeBackgroundColor 2s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            justify-items: center;
+        }
+
+        /*LOGO*/
+        .logo
+        {
+            position: relative;
+            top: 175px;
+            animation: logoAnimation 3s;
+            width: 250px;
+        }
+        /*KEYFRAME ANIMAÇÃO DA LOGO*/
+        @keyframes logoAnimation
+        {
+            0%   { top: -350px; }
+            100%  {  top: 175px;  }
+        }
+
+
+        @keyframes changeBackgroundColor {
+            0% {
+                background-color: #318ce7;
+                }
+            25% {
+                background-color: #264A61 ;
+                }
+            50% {
+                background-color: #093F61;
+                }
+        }
+        
+</style>
+
+</head>
+<body>
+    <!--LOGO-->
+    <img src="imagensTelaInicial/logoetexto.png" class="logo">
+</body>
+
+<script>
+    temporizador = setTimeout(abrir,3000)
+    function abrir() {
+        window.open("telaInicial.html","_self")
+    }
+</script>
+</html>

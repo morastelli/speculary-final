@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins';
+    background: url() no-repeat;
+    background-size: cover;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+/*Configuração do tamanho da seta*/ 
+.seta{
+    position: relative;
+    top: 10%;
+    left: -42%;
+    width: 45px;
+    height: 45px;
+    margin-top: 8px;
+}
+
+.div1{
+    width: 80%;
+    font-size: 15px;
+    border-collapse: collapse;
+    text-align: center;
+}
+.botao{
+    font-size: 10px;
+    height: 20px;
+    width: 20px;
+}
+.h2{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}

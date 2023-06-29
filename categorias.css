@@ -1,0 +1,375 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+
+/* Css universal da página */
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Criação de váriavel. */
+:root
+{
+    --clr: #222327
+}
+
+/* Configurações do body. */
+body
+{
+    justify-content: space-between;
+    align-items: center;
+    
+    display: flex;
+    background-color: white;
+    flex-direction: column;
+    overflow: hidden;
+    position: fixed;
+    height: 740px;
+    width: 360px;
+}
+
+/* Configuração de posicionamento e tamanho da navbar. */
+nav
+{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    align-content: center;
+    position: absolute;
+}
+
+/* Configuração de imagens da esquerda e direita da navbar. */
+.esquerda
+{
+    width: 33%;
+    height: 60px;
+}
+.logo
+{
+    width: 60px;
+    height: 60px;
+}
+.direita
+{
+    width: 33%;
+    height: 60px;
+    align-items: center;
+    align-content: center;
+    justify-content: right;
+    display: flex;
+}
+.carrinho
+{
+    margin-right: 10px;
+    margin-top: 17px;
+    width: 40px;
+    height: 40px;
+}
+
+/* Configuração de posicionamento e tamanho da div que engloba os quadrados de categoria. */
+.principal
+{
+    height: 575px;
+    width: 360px;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column; 
+}
+
+/* Quadrados1,2,3,4 = Sombra por cima das imagens.
+   Quadrado1,2,3,4 = Configuração de tamanho e posicionamento + Imagens.
+   Quadradosdireita1,2,3,4 = Quadrado branco com seta por cima das imagens.
+*/
+.quadrados1
+{
+    width: 100%;
+    height: 120px;
+    background-color: rgb(5, 5, 5);
+    position: absolute;
+    opacity: 50%;
+    top: 70px;
+    z-index: 1;
+}
+.quadrado1
+{
+    position: absolute;
+    width: 100%;
+    height: 120px;
+    background-color: #093F61;
+    background-image: url(images/lentes.jpg);
+    top: 70px;
+    border-top: 3px solid #093F61;
+    border-bottom: 3px solid #093F61;
+    
+}
+.quadrados2
+{
+    width: 360px;
+    height: 120px;
+    background-color: #050505;
+    position: absolute;
+    opacity: 50%;
+    top: 220px;
+    z-index: 1;
+}
+.quadrado2
+{
+    width: 360px;
+    height: 120px;
+    background-color: #093f61;
+    background-image: url(images/images\ \(1\).jpg);
+    position: absolute;
+    top: 220px;
+    border-top: 3px solid #093F61;
+    border-bottom: 3px solid #093F61;
+}
+.quadrados3
+{
+    width: 360px;
+    height: 120px;
+    background-color: #050505;
+    position: absolute;
+    opacity: 50%;
+    top: 370px;
+    z-index: 1;
+    
+}
+.quadrado3
+{
+    width: 360px;
+    height: 120px;
+    background-color: #093f61;
+    background-image: url(images/oculosdegrau.jpg);
+    position: absolute;
+    top: 370px;
+    border-top: 3px solid #093F61;
+    border-bottom: 3px solid #093F61;
+}
+.quadrados4
+{
+    width: 360px;
+    height: 120px;
+    background-color: #050505;
+    opacity: 50%;
+    position: absolute;
+    top: 520px;
+    z-index: 1;
+}
+.quadrado4
+{
+    width: 360px;
+    height: 120px;
+    background-color: #093f61;
+    background-image: url(images/armaçao.jpg);
+    position: absolute;
+    top: 520px;
+    border-top: 3px solid #093F61;
+    border-bottom: 3px solid #093F61;
+}
+.quadradosdireita1
+{
+    border-top: 3px solid #093F61;
+    width: 100px;
+    height: 120px;
+    background-color: white;
+    z-index: 2;
+    top: 70px;
+    position: absolute;
+    left: 260px;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    justify-items: center;
+    display: flex;
+    border-bottom: 3px solid #093F61;
+}
+.quadradosdireita2
+{
+    border-top: 3px solid #093F61;
+    width: 100px;
+    height: 120px;
+    background-color: white;
+    z-index: 2;
+    top: 220px;
+    position: absolute;
+    left: 260px;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    justify-items: center;
+    display: flex;
+    border-bottom: 3px solid #093F61;
+}
+.quadradosdireita3
+{
+    border-top: 3px solid #093F61;
+    width: 100px;
+    height: 120px;
+    background-color: white;
+    z-index: 2;
+    top: 370px;
+    position: absolute;
+    left: 260px;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    justify-items: center;
+    display: flex;
+    border-bottom: 3px solid #093F61;
+}
+.quadradosdireita4
+{
+    border-top: 3px solid #093F61;
+    width: 100px;
+    height: 120px;
+    background-color: white;
+    z-index: 2;
+    top: 520px;
+    position: absolute;
+    left: 260px;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    justify-items: center;
+    display: flex;
+    border-bottom: 3px solid #093F61;
+}
+.seta
+{
+    width: 20px;
+}
+
+/* Tamanho, posicionamento e cor de texto do footer. */
+.texto
+{
+    color: white;
+    font-weight: bolder;
+    opacity: 1;
+    top: 95px;
+    position: absolute;
+    z-index: 2;
+}
+
+/*CONFIGURAÇÃO DA NAVBAR DE BAIXO*/
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+/*NAVBAR DE BAIXO*/
+.navegacao
+{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 360px;
+    height: 70px;
+    background-color: #093F61;
+    position: relative;    
+    justify-content: space-around;
+    display: flex;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+.navegacao ul
+{
+    display: flex;
+    margin-left: 0px;
+    padding-left: 0px;
+    width: 360px;
+}
+
+.navegacao ul li
+{
+    position: relative;
+    list-style: none;
+    width: 360px;
+    height: 60px;
+    z-index: 1;
+}
+
+.navegacao ul li a
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    font-weight: 500;
+}
+
+.navegacao ul li a .icon
+{
+    position: relative;
+    display: block;
+    line-height: 80px;
+    font-size: 1.5em;
+    text-align: center;
+    transition: 0.5s;
+    color: #fff;
+}
+
+.navegacao ul li.active a .icon
+{
+    transform: translateY(-35px);
+}
+
+.navegacao ul li a .text
+{
+    position: absolute;
+    color: #fff;
+    font-weight: 400;
+    font-size: 0.75em;
+    letter-spacing: 0.05em;
+    transition: 0.5s;
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+.navegacao ul li.active a .text
+{
+    opacity: 1;
+    transform: translateY(10px);
+}
+
+.indicator
+{
+    position: absolute;
+    margin-left: 7px;
+    margin-right: 7px;
+    width: 75px;
+    height: 75px;
+    top: -50%;
+    background: #093F61;
+    border-radius: 50%;
+    border: 6px solid #fff;
+    transition: 0.5s;
+}
+
+/*DESLOCAMENTO DA BOLA*/
+.navegacao ul li:nth-child(1).active ~ .indicator
+{
+    transform: translateX(calc(90px * 0));/*0PX*/
+}
+.navegacao ul li:nth-child(2).active ~ .indicator
+{
+    transform: translateX(calc(90px * 1));/*90PX*/
+}
+.navegacao ul li:nth-child(3).active ~ .indicator
+{
+    transform: translateX(calc(90px * 2));/*180PX*/
+}
+.navegacao ul li:nth-child(4).active ~ .indicator
+{
+    transform: translateX(calc(90px * 3));/*270PX*/
+}
